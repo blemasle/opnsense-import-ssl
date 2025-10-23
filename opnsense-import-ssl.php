@@ -117,13 +117,18 @@ if (! openssl_x509_check_private_key($cert, $key)) {
 
 // verify issuer from allowed Let's Encrypt issuers
 $allowedIssuers = [
-    'O=Let\'s Encrypt, CN=E5, C=US',
-    'O=Let\'s Encrypt, CN=E6, C=US',
+    'O=Let\'s Encrypt, CN=E7, C=US',
     'O=Let\'s Encrypt, CN=E8, C=US',
-    'O=Let\'s Encrypt, CN=R3, C=US',
-    'O=Let\'s Encrypt, CN=R10, C=US',
-    'O=Let\'s Encrypt, CN=R11, C=US',
+    'O=Let\'s Encrypt, CN=E9, C=US',
+    'O=Let\'s Encrypt, CN=YE1, C=US',
+    'O=Let\'s Encrypt, CN=YE2, C=US',
+    'O=Let\'s Encrypt, CN=YE3, C=US',
+    'O=Let\'s Encrypt, CN=R12, C=US',
     'O=Let\'s Encrypt, CN=R13, C=US',
+    'O=Let\'s Encrypt, CN=R14, C=US',
+    'O=Let\'s Encrypt, CN=YR1, C=US',
+    'O=Let\'s Encrypt, CN=YR2, C=US',
+    'O=Let\'s Encrypt, CN=YR3, C=US',
 ];
 
 $issuer = trim(cert_get_issuer($cert, false));
